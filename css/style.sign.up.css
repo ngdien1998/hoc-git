@@ -1,0 +1,73 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/universe.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 30px;
+    font-size: 30px;
+    color: #4a148c;
+    display: block;
+}
+
+#sign-up {
+    height: 580px;
+    width: 370px;
+    padding: 20px;
+    margin: 0;
+    border-radius: 15px;
+    box-shadow: none; 
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row, .row .col {
+    margin: 0;
+    padding: 0;
+}
+
+#col-last-name {
+    padding-left: 8px;
+}
+
+#col-first-name {
+    padding-right: 8px;
+}
+
+.name {
+    margin: 0;
+}
+
+#sign-up-btn {
+    font-size: 17px;
+    font-weight: 700;
+    padding: 5px 0px;
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    background: linear-gradient(to right, #64b5f6, #5c6bc0, #ff80ab);
+    box-shadow: none;
+}
+
+#sign-up-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
+}
+
+#used-license span {
+    padding-left: 30px;
+}

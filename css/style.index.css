@@ -1,0 +1,655 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#topbar {
+    height: 50px;
+    position: relative;
+    padding-left: 16px;
+}
+
+.left, .right {
+    padding: 0;
+    margin: 0;
+}
+
+#contact {
+    font-size: 13px;
+    margin-top: 16px;
+}
+
+#topbar * {
+    color: #FFF;
+}
+
+#dang-nhap, #dang-ky {
+    padding: 8px 16px;
+}
+
+#login {
+    margin-top: 6px;
+}
+
+#navbar {
+    z-index: 100;
+}
+
+nav .nav-wrapper {
+    box-shadow: none;
+    padding-left: 16px;
+}
+
+#intro-text {
+    text-align: center;
+    margin: 32px 0;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+#page-intro {
+    background: url(../images/intropagepicture.jpeg) fixed center no-repeat;
+	height: 450px;
+    background-size: cover;
+}
+
+#page-intro #intro-content {
+    width: 70%;
+    float: right;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.952), rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0));
+}
+
+#page-intro #intro-content div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding-right: 32px;
+    text-align: right;
+}
+
+#intro-content div p {
+    font-size: 52px;
+    font-weight: 800;
+    color: #FFF;
+}
+
+#intro-content div a {
+    border-radius: 32px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.card-panel {
+    margin: 0;
+}
+
+#intro-banner {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.banner {
+    height: 100px;
+    width: 30%;
+    position: relative;
+    border-radius: 5px;
+    float: left;
+    margin: 0 8px;
+}
+
+.banner img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.banner #banner-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+}
+
+.banner #banner-content #title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.divider {
+    margin: 5px 0px;
+}
+
+#banner-1 {
+    background: linear-gradient(to right bottom, #f57c00, #ffc107);
+    margin-left: 32px;
+}
+
+#banner-2 {
+    background: linear-gradient(to right bottom, #9c27b0, #9575cd);
+}
+
+#banner-3 {
+    background: linear-gradient(to right bottom, #3f51b5, #00acc1);
+}
+
+#lastest-update {
+    height: 250px;
+    margin: 0;
+    background: url(../images/apple-business-computer-39284.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+.description-text {
+    width: 25%;
+    float: left;
+    color: #FFF;
+    height: 100%;
+    padding: 16px;
+    background: linear-gradient(to right, #000, #000000a1, #2195f300);
+}
+
+.description-text h4 {
+    font-weight: bold;
+}
+
+.description-text .btn {
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.content {
+    width: 75%;
+    float: right;
+    padding: 15px;
+    padding-left: 40px;
+    background: linear-gradient(to left, #e0e0e0, #e0e0e0, #e0e0e0, #e0e0e000);
+}
+
+.app {
+    float: left;
+    width: 15%;
+    margin-right: calc(10% / 6 - 3px);
+    padding: 8px;
+    padding-top: 16px;
+    height: 30%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.app img {
+    width: 80%;
+    margin-bottom: 16px;
+}
+
+.small-text {
+    font-size: 13px;
+}
+
+.detail {
+    text-align: left;
+}
+
+.app-name, .app-detail {
+    display: block;
+}
+
+.wrap-with-overflow {
+    width: 100%;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: 2px;
+}
+
+.app-name {
+    color: #585858;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.padding-16px {
+    padding-bottom: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#outstanding {
+    padding: 16px;
+}
+
+.most {
+    width: 40%;
+    float: left;
+    background: linear-gradient(to right, #ffee58, #fff176);
+}
+
+.most .app-icon {
+    margin-bottom: 16px;    
+}
+
+.sub-most {
+    width: 60%;
+    float: right;
+    padding-left: 8px;
+}
+
+.card-panel {
+    border-radius: 8px;
+}
+
+.main-des-app .btn {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.app-info-1 {
+    float: left;
+    width: 36%;
+}
+
+.app-info-2 {
+    float: right;
+    width: 62%;
+    padding: 0 16px;
+    padding-right: 0;
+}
+
+.graph {
+    margin-bottom: 8px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.category {
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    background: linear-gradient(to right, #fff176, #fff59d, #fff9c4, #fffde7);
+}
+
+.outstanding-app {
+    padding-top: 8px;
+}
+
+.category a {
+    padding: 4px 16px;
+    font-size: 16px;
+}
+
+.outstanding-app .app {
+    width: 23.5%;
+    margin-right: 1.5%;
+    height: 295px;
+}
+
+#game-video-trailer {
+    margin: 30;
+    height: 510px;
+    padding: 16px;
+}
+
+#lastest-video {
+    width: 49.5%;
+    float: left;
+    height: 100%;
+    padding: 16px;
+}
+
+#more-video {
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+
+.sub-video {
+    margin-bottom: 8px;
+    height: 32.1%;
+}
+
+#lastest-video iframe {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.game-img {
+    float: left;
+    width: 12%;
+}
+
+.game-img img {
+    width: 100%
+}
+
+.game-name {
+    float: right;
+    width: 88%;
+    padding-left: 16px;
+}
+
+#lastest-video .game-name h5, .des-in-right .name {
+    margin: 0;
+}
+
+#lastest-video > div {
+    margin-top: 8px;
+}
+
+.game-video-des, .des-in-right p:last-child {
+    margin-top: 2px;
+    font-size: 12px;
+    color: rgb(83, 83, 83);
+}
+
+.video-in-left {
+    width: 40%;
+    float: left;
+}
+
+.video-in-left iframe {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.des-in-right {
+    width: 60%;
+    float: right;
+    padding-left: 8px;
+}
+
+.des-in-right p.small-text, .game-name p.small-text {
+    margin-bottom: 8px;
+}
+
+#start {
+    width: 1100px;
+    margin: 80px auto 30px auto;
+}
+
+.col-s2 {
+    height: 100px;
+}
+
+.start-item {
+    margin: 0px 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+
+    position: relative;
+}
+
+.start-item:last-child {
+    margin-left: 0;
+}
+
+.start-item:first-child {
+    margin-right: 0;
+}
+
+#start-item-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;;
+    transform: translate(-50%, -50%);
+}
+
+.start-item #start-item-group #amount {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.start-item #start-item-group #what {
+    font-size: 13px;
+    display: inline;
+}
+
+#col-1 {
+    background: linear-gradient(to bottom right, #009688, #039be5);
+}
+
+#col-2 {
+    background: linear-gradient(to bottom right, #cddc39, #8bc34a);
+}
+
+#col-3 {
+    background: linear-gradient(to bottom right, #ff9800 , #ff5722);
+}
+
+#col-4 {
+    background: linear-gradient(to bottom right, #558b2f, #4db6ac);
+}
+
+#col-5 {
+    background: linear-gradient(to bottom right, #1e88e5, #512da8);
+}
+
+#col-6 {
+    background: linear-gradient(to bottom right, #c62828, #ba68c8);
+}
+
+#lastest-news {
+    height: 500px;
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+h4.section {
+    padding: 0;
+    margin: 0;
+    margin-top: 32px;
+    text-align: center;
+}
+
+#news-left {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-right: 4px;
+}
+
+#lastest-news .card-panel {
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+#news-left .card-panel {
+    background: url(../images/new-bphone.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.news-title {
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    font-size: 16px;
+    transition: 0.3s all;
+    padding: 16px;
+    padding-top: 0;
+    border-radius: 8px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    width: 100%;
+}
+
+.main-news {
+    font-size: 32px;
+}
+
+.news:hover .news-title {
+    padding-bottom: 24px;
+}
+
+.news:hover {
+    opacity: 0.5;
+}
+
+#lastest-news .card-panel {
+    height: 100%;
+}
+
+#news-right {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding-left: 4px;
+}
+
+#sub-news-top {
+    width: 100%;
+    height: 50%;
+    padding-bottom: 4px;
+}
+
+#sub-news-left {
+    width: 40%;
+    height: 100%;
+    float: left;
+    padding-right: 4px;
+}
+
+#sub-news-left .card-panel {
+    background: url(../images/ios12.jpg) no-repeat;
+    background-size: cover;
+}
+
+#sub-news-right {
+    width: 60%;
+    height: 100%;
+    float: right;
+    padding-left: 4px;
+}
+
+#sub-news-right .card-panel {
+    background: url(../images/wwdc.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#sub-news-bottom {
+    width: 100%;
+    height: 50%;
+    padding-top: 4px;
+}
+
+#bottom-left {
+    float: left;
+    height: 100%;
+    width: 60%;
+    padding-right: 4px;
+}
+
+#bottom-left .card-panel {
+    background: url(../images/coc-news.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#bottom-right {
+    float: right;
+    height: 100%;
+    width: 40%;
+    padding-left: 4px;
+}
+
+#bottom-right .card-panel {
+    background: url(../images//github.jpg) no-repeat center;
+    background-size: 100% 100%;
+}
+
+#footer-1, #footer-2 {
+    padding: 64px 200px;
+    margin-top: 64px;
+    background-color: #eeeeee;
+}
+
+#footer-1-left {
+    width: 30%;
+    float: left;
+}
+
+#footer-1-right {
+    width: 70%;
+    float: right;
+    padding-left: 32px;
+}
+
+#footer-1-image-left {
+    width: 100px;
+    float: left;
+}
+
+#footer-1-content-right {
+    width: calc(100% - 100px);
+    float: right;
+    padding-left: 16px;
+}
+
+#footer-1-content-right > a:first-child, #footer-1-right > a:first-child {
+    margin-bottom: 8px;
+    display: block;
+}
+
+#footer-1-right table * {
+    font-size: 13px;
+}
+
+#footer-1-right p {
+    margin-bottom: 8px;
+}
+
+#footer-2 {
+    background-color: #006064;
+    margin-top: 0;
+    padding: 24px 200px;
+}
+
+td {
+    padding: 0;
+    margin: 0;
+}
+tr {
+    border: 0;
+}
+
+#footer-2 * {
+    color: #FFF;
+}
+
+#footer-2-left {
+    width: 20%;
+    float: left;
+}
+
+#footer-2-left h5 {
+    margin: 0;
+}
+
+#footer-2-right {
+    width: 80%;
+    padding-left: 16px;
+    float: right;
+}
+
+#footer-2-right p:first-child {
+    margin-top: 8px;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #e0e0e0;
+}

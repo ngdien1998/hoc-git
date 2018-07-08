@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/jquery.particleground.js"></script>
+    <script src="js/script.login.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.login.css">
+</head>
+
+<body>
+    <div class="bg" id="particles">
+        <div id="login-panel" class="card-panel">
+            <label id="title">ĐĂNG NHẬP SOFTLIB</label>
+
+            <form action="" method="POST">
+                <div class="input-field">
+                    <input id="username" type="text" class="validate">
+                    <label for="username">Tên đăng nhập</label>
+                </div>
+
+                <div class="input-field" id="password-input">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Mật khẩu</label>
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+
+                <a class="btn waves-effect" id="login-btn">Đăng nhập</a>
+    
+                <div class="sign-in-with">
+                    <label>Hoặc đăng nhập với</label>
+                    <ul id="login-list">
+                        <li><img src="images/facebook.png" alt="facebook"></li>
+                        <li><img src="images/twitter.png" alt="twitter"></li>
+                        <li><img src="images/google.png" alt="google"></li>
+                        <li class="clearfix"></li>
+                    </ul>
+                </div>
+
+                <div class="sign-up">
+                    <label>Bạn chưa có tài khoản?</label><br>
+                    <a href="#" class="flat-btn waves-effect" id="sign-up-btn"><b>TẠO TÀI KHOẢN MỚI</b></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

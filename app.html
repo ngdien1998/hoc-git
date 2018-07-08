@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zing MP3</title>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/script.app.js"></script>
+    <link rel="stylesheet" href="css/material-icon.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div id="top-bar" class="green darken-4">
+        <div id="logo">
+            <a href="index.html"><h5>SOFTLIB</h5></a>
+        </div>
+
+        <div id="search-box-and-login-user">
+            <div id="search-box">
+                <input type="text" id="search" placeholder="Nhập ứng dụng để tìm kiếm">
+            </div>
+
+            <div id="login-user">
+
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="navbar" class="green darken-3">
+        <div class="type green" id="application">
+            <img src="images/apps.png" alt="application" id="apps-icon">
+            <label id="type-text">Ứng dụng</label>
+        </div>
+
+        <div id="navigator">
+            <div id="main-nav">
+                <nav class="green darken-3">
+                    <a href="software.html" class="breadcrumb wrap-with-overflow">Trang chủ ứng dụng</a>
+                    <a href="#!" class="breadcrumb wrap-with-overflow">Zing MP3</a>
+                </nav>
+            </div>
+
+            <div id="choose-app-type">
+                <ul id="app-type-drop-down" class="dropdown-content">
+                    <li class="waves-effect">
+                        <a href="#!">Ăn uống</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Bản đồ</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Cá nhân</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Công cụ</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Mua sắm</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Du lịch</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Giải trí</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Giáo dụ</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Làm đẹp</a>
+                    </li>
+                </ul>
+                <a class="dropdown-trigger white-text btn-flat" id="choose" href="#!" data-target="app-type-drop-down">
+                    <i class="material-icons right">arrow_drop_down</i>
+                    Loại ứng dụng
+                </a>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="content">
+        <div id="sidebar">
+            <ul id="app-types">
+                <li class="app-type waves-effect">
+                    <img src="images/food.png" alt="food">
+                    <a href="#!">Ăn uống</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/map.png" alt="map">
+                    <a href="#!">Bản đồ</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/canhan.png" alt="private">
+                    <a href="#!">Cá nhân</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/congcu.png" alt="tool">
+                    <a href="#!">Công cụ</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/muasam.png" alt="buying">
+                    <a href="#!">Mua sắm</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/dulich.png" alt="trip">
+                    <a href="#!">Du lịch</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/giaitri.png" alt="entertaintment">
+                    <a href="#!">Giải trí</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/giaoduc.png" alt="edu">
+                    <a href="#!">Giáo dục</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/lamdep.png" alt="makeup">
+                    <a href="#!">Làm đẹp</a>
+                </li>
+            </ul>
+            <div class="divider"></div>
+            <ul id="more-info">
+                <li>
+                    <a href="#!">Danh sách yêu thích</a>
+                </li>
+                <li>
+                    <a href="#!">Đăng ký của tôi</a>
+                </li>
+                <li>
+                    <a href="#!">Hướng dẫn</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="main-content">
+            <div id="app-content">
+                <div class="card-panel">
+                    <div id="app-info">
+                        <div id="app-image">
+                            <img src="images/zing.png" alt="application">
+                        </div>
+
+                        <div id="app-download">
+                            <h5 id="app-name">Zing MP3</h5>
+
+                            <div>
+                                <div class="left">
+                                    <a href="#!" class="desciption" id="owner">Zalo group</a>
+                                    &middot;
+                                    <a href="#!" class="desciption" id="funtion">Âm nhạc và âm thanh</a>
+                                </div>
+                                <div class="right">
+                                    <label>345.906</label>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <img src="images/3+.png" alt="3+" id="grade">
+
+                            <div>
+                                <span class="desciption desciption-1">Chứa quảng cáo</span>
+                                &middot;
+                                <span class="desciption desciption-1">Cho phép mua hàng trong ứng dụng</span>
+                            </div>
+
+                            <div>
+                                <img src="images/info.png" alt="info" width="12" height="12">
+
+                                <a class="dropdown-trigger desciption-1" href="#!" data-target="devices">Ứng dụng này tương thích với tất cả thiết bị của bạn.</a>
+                                <ul id="devices" class="dropdown-content">
+                                    <li>
+                                        <a href="#!">Samsung SM J700H</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Google Pixel 2 XL</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Samsung galaxy Note9</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <a class="btn green darken-2 waves-effect right" id="btn-download">
+                                <i class="material-icons left">file_download</i>Tải và cài đặt</a>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div id="app-screenshot" class="carousel">
+                        <a class="carousel-item" href="#one!">
+                            <img style="float: left;" src="images/zing-1.png" alt="app-screenshot">
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <img style="float: left;" src="images/zing-2.png" alt="app-screenshot">
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <img style="float: left;" src="images/zing-3.png" alt="app-screenshot">
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <img style="float: left;" src="images/zing-4.png" alt="app-screenshot">
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <img style="float: left;" src="images/zing-5.png" alt="app-screenshot">
+                        </a>
+                    </div>
+
+                    <div id="feature-detail">
+                        <ul class="collapsible">
+                            <li class="active">
+                                <div class="collapsible-header">
+                                    <b>Các tính năng của Zing MP3</b>
+                                    <i class="material-icons right">keyboard_arrow_down</i>
+                                </div>
+                                <div class="collapsible-body">
+                                    <p class="lighten-text">Zing MP3 là ứng dụng nghe nhạc miễn phí hàng đầu Việt Nam. Với kho nhạc chất lượng cao
+                                        đồ sộ từ http://mp3.zing.vn bạn sẽ có trải nghiệm âm nhạc tuyệt vời nhất trên thiết
+                                        bị di động của mình.</p>
+                                    <p>
+                                        <b>Các tính năng nổi bật:</b>
+                                    </p>
+                                    <p class="lighten-text">- Chơi được hầu hết các định dạng nhạc phổ biến, hỗ trợ cả nhạc lossless (.flac, yêu
+                                        cầu Android 3.1+)
+                                    </p>
+                                    <p class="lighten-text">- Có widget , music controller ở thanh thông báo và cả ở màn hình khóa (Android 4.0+)</p>
+                                    <p class="lighten-text">- Widget ở màn hình khóa cho các máy Android 4.2 trở lên</p>
+                                    <p class="lighten-text">- Điều khiển nhạc thông qua tai nghe (có thể nhấn 2 lần/3 lần nút play (pause) để next/prev),
+                                        hiển thị thông tin bài hát lên các thiết bị Bluetooth</p>
+                                    <p class="lighten-text">- To/nhỏ dần âm lượng khi tiếp tục/dừng, chuyển bài</p>
+                                    <p class="lighten-text">- Hỗ trợ các hiệu ứng âm thanh, điều chỉnh bass, balance, virtualizer và reverb</p>
+                                    <p class="lighten-text">- Tìm kiếm thông minh bằng giọng nói, hỗ trợ cả tiếng Việt</p>
+                                    <p class="lighten-text">- Bật ứng dụng lên để duyệt/phát khi nhấn vào link một bài hát/video/album/playlist/ca
+                                        sỹ trên website mp3.zing.vn</p>
+                                    <p class="lighten-text">- Xem video chất lượng cao với nhiều độ phân giải khác nhau từ 240p đến 1080p</p>
+                                    <p class="lighten-text">- Hiển thị đầy đủ thông tin bài hát như tên album, hình album, tên ca sỹ, tên bài hát,
+                                        lời bài hát cho cả nhạc offline lẫn nhạc online </p>
+                                    <p class="lighten-text">- Download nhạc 128kbps không giới hạn, user có tài khoản Zing VIP có thể download nhạc
+                                        320kbps và nhạc lossless (.flac)</p>
+                                    <p class="lighten-text">- Nghe nhạc online chất lượng cao (320kbps)</p>
+                                    <p class="lighten-text">- Quản lý bài hát, playlist, yêu thích… như trên website mp3.zing.vn</p>
+                                    <p class="lighten-text">- Trình chơi nhạc offline và online thông minh</p>
+                                    <p class="lighten-text">- Tạo, quản lý và chơi nhạc theo playlist offline</p>
+                                    <p class="lighten-text">- Có ngôn ngữ tiếng Anh bên cạnh tiếng Việt</p>
+                                    <p class="lighten-text">- Hỗ trợ Chromecast</p>
+                                    <p>
+                                        <b>Các quyền cần cung cấp:</b>
+                                    </p>
+                                    <p class="lighten-text">- READ_PHONE_STATE: Zing MP3 chỉ sử dụng quyền này để tạm dừng nhạc khi có cuộc gọi đến.</p>
+                                    <p class="lighten-text">- WRITE_EXTERNAL_STORAGE: Quyền này cho phép Zing MP3 có thể tải nhạc về và lưu trữ trên
+                                        bộ nhớ của thiết bị.</p>
+                                    <p>
+                                        <b>Báo lỗi, góp ý xin gửi về zing.mobileapps@gmail.com</b>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="user-judgement">
+                        <div id="judge-title">
+                            <p class="left no-margin">
+                                <b>ĐÁNH GIÁ</b>
+                            </p>
+                            <a href="#!" class="right small-text">
+                                <img src="images/info.png" alt="info" width="12" height="12"> Chính sách đánh giá
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <a href="#!" class="right btn green darken-2 waves-effect margin-top-8px">
+                            <i class="material-icons left">create</i>Viết bài đánh giá</a>
+                        <div class="clearfix"></div>
+
+                        <div id="user-comments">
+                            <div>
+                                <div class="comment">
+                                    <div id="user-avatar">
+                                        <img src="images/user1.png" alt="user-avatar" width="50" height="50">
+                                    </div>
+
+                                    <div id="user-comment">
+                                        <div id="user-name">
+                                            <p class="no-margin">
+                                                <b>Nguyễn Thị Minh Thư</b>
+                                            </p>
+                                            <p id="date-comment" class="small-text">17 tháng 4, 2018</p>
+                                        </div>
+                                        <p id="comment-text" class="lighten-text">
+                                            Ad ơi, dùng thì ok r nhg khi muốn đáng ký Vip phải dùng thẻ tín dụng đủ kiểu. Có 1 số ng như học sinh muốn đăng ky nhg vì
+                                            cái đấy k có thì phải ntn? Mong ad khắc phục nó, hoặc là chuyển qua thẻ đt hay
+                                            j j đấy, hoặc bỏ luôn vip và mn có để tải về mà k có sự cản trở
+                                        </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="comment">
+                                    <div id="user-avatar">
+                                        <img src="images/user2.png" alt="user-avatar" width="50" height="50">
+                                    </div>
+
+                                    <div id="user-comment">
+                                        <div id="user-name">
+                                            <p class="no-margin">
+                                                <b>Trí Trần</b>
+                                            </p>
+                                            <p id="date-comment" class="small-text">17 tháng 4, 2018</p>
+                                        </div>
+                                        <p id="comment-text" class="lighten-text">
+                                            Mình góp ý nhá bài nhạc nước ngoài nào cx bản quyền thì nghe nhạc mik thích kiểu gì hả ad
+                                        </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="comment">
+                                    <div id="user-avatar">
+                                        <img src="images/user3.png" alt="user-avatar" width="50" height="50">
+                                    </div>
+
+                                    <div id="user-comment">
+                                        <div id="user-name">
+                                            <p class="no-margin">
+                                                <b>Nguyễn văn hiếu</b>
+                                            </p>
+                                            <p id="date-comment" class="small-text">17 tháng 4, 2018</p>
+                                        </div>
+                                        <p id="comment-text" class="lighten-text">
+                                            Hay
+                                        </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="comment">
+                                    <div id="user-avatar">
+                                        <img src="images/user4.png" alt="user-avatar" width="50" height="50">
+                                    </div>
+
+                                    <div id="user-comment">
+                                        <div id="user-name">
+                                            <p class="no-margin">
+                                                <b>Người dùng Google</b>
+                                            </p>
+                                            <p id="date-comment" class="small-text">17 tháng 4, 2018</p>
+                                        </div>
+                                        <p id="comment-text" class="lighten-text">
+                                            Thật ra, tôi rất thích ứng dụng này nhưng có điều là tại sao ca sĩ sáng tác ra nhạc mà cần phải có tiền với tải được những
+                                            nhạc bản quyền , nếu vậy không có các fan thì hát cho ai nghe
+                                        </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a href="#!" class="btn-flat waves-effect green-text" id="btn-read-all-cmt">
+                                    <b>ĐỌC TẤT CẢ BÌNH LUẬN</b>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="divider with-margin"></div>
+
+                    <div id="new-feature">
+                        <p>
+                            <b>TÍNH NĂNG MỚI</b>
+                        </p>
+                        <p class="lighten-text small-text">
+                            - Nâng cấp trải nghiệm nghe nhạc offline.
+                        </p>
+                        <p class="lighten-text small-text">
+                            - Sửa lỗi phát trùng nhạc, không hiển thị danh sách bài hát trong thư viện.
+                        </p>
+                        <p class="lighten-text small-text">
+                            - Hỗ trợ Android 8.
+                        </p>
+                    </div>
+
+                    <div class="divider with-margin"></div>
+
+                    <div id="adding-info">
+                        <p>
+                            <b>THÔNG TIN BỔ SUNG</b>
+                        </p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <b>Đã cập nhật</b>
+                                    </p>
+                                    <p class="lighten-text">16 tháng 4, 2018</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <b>Kích thước</b>
+                                    </p>
+                                    <p class="lighten-text">12MB</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <b>Lượt cài đặt</b>
+                                    </p>
+                                    <p class="lighten-text">50.000.000+</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <b>Phiên bản hiện tại</b>
+                                    </p>
+                                    <p class="lighten-text">18.03.02</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <b>Cần có Android</b>
+                                    </p>
+                                    <p class="lighten-text">4.0.3 trở lên</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <b>Xếp hạng nội dung</b>
+                                    </p>
+                                    <p class="lighten-text">Được xếp hạng 3+</p>
+                                    <a href="#!">Tìm hiểu thêm</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <b>Yếu tố tương tác</b>
+                                    </p>
+                                    <p class="lighten-text">Người dùng tương tác</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <b>Sản phẩm trong ứng dụng</b>
+                                    </p>
+                                    <p class="lighten-text">45.000 ₫ - 329.000 ₫ mỗi mặt hàng</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <b>Quyền</b>
+                                    </p>
+                                    <a href="#!">Xem chi tiết</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <b>Báo cáo</b>
+                                    </p>
+                                    <a href="#!">Gắn cờ là không hợp lệ</a>
+                                </td>
+                                <td>
+                                    <p>
+                                        <b>Cung cấp bởi</b>
+                                    </p>
+                                    <p class="lighten-text">Zalo group</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <b>Nhà phát triển</b>
+                                    </p>
+                                    <a href="https://mp3.zing.vn" target="_blank">Truy cập trang web</a>
+                                    <a href="https://mp3.zing.vn/huong-dan/policy">Chính sách bảo mật</a>
+                                    <p class="lighten-text">322B Ly Thuong Kiet, P14, Q10, Ho Chi Minh City, Vietnam</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="more-app">
+                <div id="title">
+                    <label class="left">Tương tự</label>
+                    <a href="#!" class="right btn waves-effect green darken-2">XEM THÊM</a>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div id="list-app">
+                    <div class="card-panel app-item hoverable waves-effect">
+                        <div id="app-icon">
+                            <img src="images/maynghenhacmp3.png" alt="icon">
+                        </div>
+
+                        <div id="app-info">
+                            <p class="no-margin wrap-with-overflow" id="app-name">Máy nghe nhạc MP3</p>
+                            <p class="no-margin wrap-with-overflow small-text lighten-text" id="app-owner">maxound</p>
+                            <p class="small-text wrap-text">Thưởng thức trải nghiệm âm nhạc chất lượng cao</p>
+
+                            <div id="app-status">
+                                <div class="left" id="status">
+                                    <a href="#!" class="blue-text darken-3 small-text">NOT INSTALL</a>
+                                </div>
+                                <div class="right" id="price">
+                                    <a href="#!" class="green-text darken-3 small-text">
+                                        <b>FREE</b>
+                                    </a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="card-panel app-item hoverable waves-effect">
+                        <div id="app-icon">
+                            <img src="images/trinhphatnhac.png" alt="icon">
+                        </div>
+
+                        <div id="app-info">
+                            <p class="no-margin wrap-with-overflow" id="app-name">Trình phát nhạc</p>
+                            <p class="no-margin wrap-with-overflow small-text lighten-text" id="app-owner">GOMO Limited</p>
+                            <p class="small-text wrap-text">Trình nghe nhạc và phát âm thanh Miễn phí tốt nhất...</p>
+
+                            <div id="app-status">
+                                <div class="left" id="status">
+                                    <a href="#!" class="blue-text darken-3 small-text">NOT INSTALL</a>
+                                </div>
+                                <div class="right" id="price">
+                                    <a href="#!" class="green-text darken-3 small-text">
+                                        <b>FREE</b>
+                                    </a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="card-panel app-item hoverable waves-effect">
+                        <div id="app-icon">
+                            <img src="images/soundclound.png" alt="icon">
+                        </div>
+
+                        <div id="app-info">
+                            <p class="no-margin wrap-with-overflow" id="app-name">Sound Cloud</p>
+                            <p class="no-margin wrap-with-overflow small-text lighten-text" id="app-owner">SoundCloud</p>
+                            <p class="small-text wrap-text">Khám phá âm nhạc cho dù bạn ở nơi nào với ứng...</p>
+
+                            <div id="app-status">
+                                <div class="left" id="status">
+                                    <a href="#!" class="blue-text darken-3 small-text">NOT INSTALL</a>
+                                </div>
+                                <div class="right" id="price">
+                                    <a href="#!" class="green-text darken-3 small-text">
+                                        <b>FREE</b>
+                                    </a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="card-panel app-item hoverable waves-effect">
+                        <div id="app-icon">
+                            <img src="images/soundclound.png" alt="icon">
+                        </div>
+
+                        <div id="app-info">
+                            <p class="no-margin wrap-with-overflow" id="app-name">SoundCloud</p>
+                            <p class="no-margin wrap-with-overflow small-text lighten-text" id="app-owner">maxound</p>
+                            <p class="small-text wrap-text">Thưởng thức trải nghiệm âm nhạc chất lượng cao</p>
+
+                            <div id="app-status">
+                                <div class="left" id="status">
+                                    <a href="#!" class="blue-text darken-3 small-text">NOT INSTALL</a>
+                                </div>
+                                <div class="right" id="price">
+                                    <a href="#!" class="green-text darken-3 small-text">
+                                        <b>FREE</b>
+                                    </a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="card-panel app-item hoverable waves-effect">
+                        <div id="app-icon">
+                            <img src="images/maynghenhacmp3.png" alt="icon">
+                        </div>
+
+                        <div id="app-info">
+                            <p class="no-margin wrap-with-overflow" id="app-name">Máy nghe nhạc MP3</p>
+                            <p class="no-margin wrap-with-overflow small-text lighten-text" id="app-owner">maxound</p>
+                            <p class="small-text wrap-text">Thưởng thức trải nghiệm âm nhạc chất lượng cao</p>
+
+                            <div id="app-status">
+                                <div class="left" id="status">
+                                    <a href="#!" class="blue-text darken-3 small-text">NOT INSTALL</a>
+                                </div>
+                                <div class="right" id="price">
+                                    <a href="#!" class="green-text darken-3 small-text">
+                                        <b>FREE</b>
+                                    </a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="card-panel app-item hoverable waves-effect">
+                        <div id="app-icon">
+                            <img src="images/maynghenhacmp3.png" alt="icon">
+                        </div>
+
+                        <div id="app-info">
+                            <p class="no-margin wrap-with-overflow" id="app-name">Máy nghe nhạc MP3</p>
+                            <p class="no-margin wrap-with-overflow small-text lighten-text" id="app-owner">maxound</p>
+                            <p class="small-text wrap-text">Thưởng thức trải nghiệm âm nhạc chất lượng cao</p>
+
+                            <div id="app-status">
+                                <div class="left" id="status">
+                                    <a href="#!" class="blue-text darken-3 small-text">NOT INSTALL</a>
+                                </div>
+                                <div class="right" id="price">
+                                    <a href="#!" class="green-text darken-3 small-text">
+                                        <b>FREE</b>
+                                    </a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="footer">
+        <div id="footer-1">
+            <div id="footer-1-left">
+                <div id="footer-1-image-left">
+                    <img src="images/service.png" alt="service" width="100" height="100">
+                </div>
+                <div id="footer-1-content-right">
+                    <a>DỊCH VỤ KHÁCH HÀNG</a>
+                    <a href="#!" class="small-text">
+                        <i class="material-icons left">email</i>Thư phản hồi</a>
+                    <a href="#!" class="small-text">360 WIKI</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div id="footer-1-right">
+                <a>SOFTLIF - CỔNG WEB PHẦN MỀM VÀ GAME SỐ MỘT VIỆT NAM</a>
+                <p class="small-text">
+                    360Game là cổng webgame online mới nhất, đa dạng, đa nền tảng số 1 Việt Nam. Tuyển tập các web game mới, web game hot, web
+                    game hay và game online hay nhất 2017. Với nhiều thể loại phong phú như web game chiến thuật, web game
+                    nhập vai, web game giải trí, v.v... các hoạt động event tặng gift code, offline, giải đấu diễn ra thường
+                    xuyên đáp ứng nhanh nhất nhu cầu của Game Thủ. Không chỉ sở hữu kho Web Game phong phú, 360Game còn sở
+                    hữu phần mềm hỗ trợ chơi game mượt số một Việt Nam - 360Game Plus cùng với cộng đồng Game Thủ đông đảo
+                    nhất Việt Nam hiện nay.
+                </p>
+                <table border="0">
+                    <tr>
+                        <td>
+                            <b>Game Online Mới Nhất</b>
+                        </td>
+                        <td>
+                            <b>Game Online Sắp Ra Mắt</b>
+                        </td>
+                        <td>
+                            <b>Sản Phẩm khác</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!">MU Online</a>
+                        </td>
+                        <td>
+                            <a href="#!">Bang Bang</a>
+                        </td>
+                        <td>
+                            <a href="#!">AppStore - Cổng Game Online</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!">MU</a>
+                        </td>
+                        <td>
+                            <a href="#!">Kiếm Khách</a>
+                        </td>
+                        <td>
+                            <a href="#!">H5Game – Game H5</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!">Võ Lâm tduyền Kỳ</a>
+                        </td>
+                        <td>
+                            <a href="#!">Võ Lâm tduyền Kỳ</a>
+                        </td>
+                        <td>
+                            <a href="#!">ZingMe – Mạng Giải tdí Game</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!">Xem thêm</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div id="footer-2">
+            <div id="footer-2-left">
+                <h5>SOFTLIF</h5>
+            </div>
+            <div id="footer-2-right">
+                <a href="#!" class="small-text">Hổ trợ |</a>
+                <a href="#!" class="small-text">Liên hệ |</a>
+                <a href="#!" class="small-text">Thỏa thuận |</a>
+                <a href="#!" class="small-text">Số điện thoại: +84967397916</a>
+                <p class="small-text">Copyright © VNG - Giấy phép MXH số 495/GP-BTTTT cấp ngày 28 /09/2015</p>
+                <p class="small-text">Cơ quan cấp phép: Bộ Thông tin và Truyền thông</p>
+                <p class="small-text">Đơn vị chủ quản: CÔNG TY CỔ PHẦN VNG</p>
+                <p class="small-text">Địa chỉ trụ sở: 52 Nguyễn Ngọc Lộc, Phường 14, Quận 10, Thành phố Hồ Chí Minh</p>
+                <p class="small-text">Người chịu trách nhiệm: Lê Hồng Minh</p>
+                <p class="small-text">Thư điện tử: info@vng.com.vn</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+
+</html>

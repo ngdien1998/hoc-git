@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần mềm</title>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/script.software.js"></script>
+    <link rel="stylesheet" href="css/material-icon.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.software.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div id="top-bar" class="green darken-4">
+        <div id="logo">
+            <a href="index.html">
+                <h5>SOFTLIB</h5>
+            </a>
+        </div>
+
+        <div id="search-box-and-login-user">
+            <div id="search-box">
+                <input type="text" id="search" placeholder="Nhập ứng dụng để tìm kiếm">
+            </div>
+
+            <div id="login-user">
+
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="navbar" class="green darken-3">
+        <div class="type green" id="application">
+            <img src="images/apps.png" alt="application" id="apps-icon">
+            <label id="type-text">Ứng dụng</label>
+        </div>
+
+        <div id="navigator">
+            <div id="main-nav">
+                <ul class="tabs green darken-3">
+                    <li class="tab col s3">
+                        <a href="#home" class="white-text">
+                            <b>Trang chủ</b>
+                        </a>
+                    </li>
+                    <li class="tab col s3">
+                        <a href="#top" class="white-text">
+                            <b>Ứng dụng hàng đầu</b>
+                        </a>
+                    </li>
+                    <li class="tab col s3">
+                        <a href="#newest" class="white-text">
+                            <b>Ứng dụng mới nhất</b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="choose-app-type">
+                <ul id="app-type-drop-down" class="dropdown-content">
+                    <li class="waves-effect">
+                        <a href="#!">Ăn uống</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Bản đồ</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Cá nhân</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Công cụ</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Mua sắm</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Du lịch</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Giải trí</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Giáo dụ</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">Làm đẹp</a>
+                    </li>
+                </ul>
+                <a class="dropdown-trigger white-text btn-flat" id="choose" href="#!" data-target="app-type-drop-down">
+                    <i class="material-icons right">arrow_drop_down</i>
+                    Loại ứng dụng
+                </a>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="content">
+        <div id="sidebar">
+            <ul id="app-types">
+                <li class="app-type waves-effect">
+                    <img src="images/food.png" alt="food">
+                    <a href="#!">Ăn uống</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/map.png" alt="map">
+                    <a href="#!">Bản đồ</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/canhan.png" alt="private">
+                    <a href="#!">Cá nhân</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/congcu.png" alt="tool">
+                    <a href="#!">Công cụ</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/muasam.png" alt="buying">
+                    <a href="#!">Mua sắm</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/dulich.png" alt="trip">
+                    <a href="#!">Du lịch</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/giaitri.png" alt="entertaintment">
+                    <a href="#!">Giải trí</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/giaoduc.png" alt="edu">
+                    <a href="#!">Giáo dục</a>
+                </li>
+                <li class="app-type waves-effect">
+                    <img src="images/lamdep.png" alt="makeup">
+                    <a href="#!">Làm đẹp</a>
+                </li>
+            </ul>
+            <div class="divider"></div>
+            <ul id="more-info">
+                <li>
+                    <a href="#!">Danh sách yêu thích</a>
+                </li>
+                <li>
+                    <a href="#!">Đăng ký của tôi</a>
+                </li>
+                <li>
+                    <a href="#!">Hướng dẫn</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="main-content">
+            <div id="home" class="tab-item">
+                <div class="part" id="lastest-update">
+                    <div>
+                        <h5 class="part-title left">Ứng dụng mới cập nhật</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/zing.png" alt="zingmp3">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Zing MP3</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Zalo group</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/shazam.png" alt="shazam">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Shazam</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Shazam Entertainment</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/sweetselfie.png" alt="zingmp3">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Sweet Selfie</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Ufoto</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/stackoverflow.png" alt="zingmp3">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Stack overflow</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Stack exchange</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/lens.png" alt="zingmp3">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Microsoft Lens</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Microsoft Corporation</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/trello.png" alt="zingmp3">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Trello</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Trello, Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="offline">
+                    <div>
+                        <h5 class="part-title left">Ứng dụng ngoại tuyến</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/learnlanguage.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Learn Language</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Ati. Studio</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/learnjapan.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Learn Japanese</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Lingo. Dear</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/karaoke.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Karaoke Việt</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Yokee
+                                    <sup style="font-size: 7px;">TM</sup>
+                                </a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/360live.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">360 Live</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">360 Live</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/nhatkythunuoi.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Nhật ký thú nuôi</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Swisper Arts</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/moshow.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">MoShow</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Picadelic</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="recommend">
+                    <div>
+                        <h5 class="part-title left">Ứng dụng được đề xuất cho bạn</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/scoompavideo.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Scoompa Video</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Scroompa</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/inshot.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">InShot</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">InShot Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/KineMaster.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">KineMaster</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">NextStreaming Corp.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Quik.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Quik</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Go Pro</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Raxi.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Raxi</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Raxi LLC</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Mr.Phone.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Mr. Phone</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">U2opia Mobile Pvt. Ltd.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="lastest-activity">
+                    <div>
+                        <h5 class="part-title left">Ứng dụng dựa trên hoạt động gần đây</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/FMRadio.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">FM Radio</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Akshay Chordiya</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Lock&HideApp.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Lock & Hide App</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">MobileIdea Studio</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Island.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Island</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Oasis Feng</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Greenify.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Greenify</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Oasis Feng</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/CCleaner.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">CCleaner</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Piriform</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Avast Cleanup.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Avast Cleanup</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Avast Software</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="installed">
+                    <div>
+                        <h5 class="part-title left">Ứng dụng đã được cài đặt</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Pixel Icon Pack.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Pixel Icon Pack</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Allshape Design</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Walli.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Walli</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Shanga</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Oreo 8.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Oreo 8</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">eytus</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Viral.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Viral</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">DrumDestroyer Themes</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Assistive Touch.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Assistive Touch</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Assistive Touch Team</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Simple Draw.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Simple Draw</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Simple Mobile Tools</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="may-like">
+                    <div>
+                        <h5 class="part-title left">Có thể bạn sẽ thích</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/SketchBook.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Sketch Book</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Autodesk Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/ibis Paint X.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">ibis Paint X</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">ibis mobile inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Photoshop Sketch.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Photoshop Sketch</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Photoshop Lightroom.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">PS Lightroom</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Illustrator Draw.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Illustrator Draw</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Capture CC.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Capture CC</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="productive">
+                    <div>
+                        <h5 class="part-title left">Hổ trợ làm việc</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Google Form.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Google Form</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">AARNAV JINDAL</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/FormsApp.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Forms App</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Heartfullapps</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Microsoft To-Do.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Microsoft To-Do</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Microsoft Corporation</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Microsoft Word.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Microsoft Word</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Microsoft Corporation</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/PowerPoint.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">PowerPoint</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Microsoft Corporation</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Microsoft Excel.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Microsoft Excel</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Microsoft Corporation</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="part" id="edu">
+                    <div>
+                        <h5 class="part-title left">Cho giáo dục</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Dcoder.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Dcoder</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Paprbit Technologies</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/SoloLearn.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">SoloLearn</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">SoloLearn</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/GeoGebra Graphing.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">GeoGebra Graph</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">International GeoGebra Inst.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/GeoGebra 3D.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">GeoGebra 3D</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">International GeoGebra Inst.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Photomath.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Photomath</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Photomath, Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Socratic.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Socratic</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Socratic</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="top" class="tab-item">
+                <div class="part" id="productive">
+                    <div>
+                        <h5 class="part-title left">Bộ sưu tập ứng dụng miễn phí hàng đầu</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/SketchBook.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Sketch Book</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Autodesk Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/ibis Paint X.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">ibis Paint X</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">ibis mobile inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Photoshop Sketch.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Photoshop Sketch</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Photoshop Lightroom.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">PS Lightroom</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Illustrator Draw.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Illustrator Draw</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Capture CC.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Capture CC</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="productive">
+                    <div>
+                        <h5 class="part-title left">Bộ sưu tập ứng dụng có phí hàng đầu</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/SketchBook.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Sketch Book</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Autodesk Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/ibis Paint X.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">ibis Paint X</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">ibis mobile inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Photoshop Sketch.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Photoshop Sketch</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Photoshop Lightroom.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">PS Lightroom</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Illustrator Draw.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Illustrator Draw</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Capture CC.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Capture CC</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="productive">
+                    <div>
+                        <h5 class="part-title left">Có thể bạn sẽ thích</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/SketchBook.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Sketch Book</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Autodesk Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/ibis Paint X.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">ibis Paint X</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">ibis mobile inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Photoshop Sketch.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Photoshop Sketch</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Photoshop Lightroom.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">PS Lightroom</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Illustrator Draw.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Illustrator Draw</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Capture CC.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Capture CC</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="productive">
+                    <div>
+                        <h5 class="part-title left">Có thể bạn sẽ thích</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/SketchBook.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Sketch Book</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Autodesk Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/ibis Paint X.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">ibis Paint X</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">ibis mobile inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Photoshop Sketch.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Photoshop Sketch</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Photoshop Lightroom.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">PS Lightroom</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Illustrator Draw.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Illustrator Draw</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Capture CC.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Capture CC</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="productive">
+                    <div>
+                        <h5 class="part-title left">Có thể bạn sẽ thích</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/SketchBook.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Sketch Book</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Autodesk Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/ibis Paint X.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">ibis Paint X</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">ibis mobile inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Photoshop Sketch.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Photoshop Sketch</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Photoshop Lightroom.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">PS Lightroom</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Illustrator Draw.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Illustrator Draw</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Capture CC.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Capture CC</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="newest" class="tab-item">
+                <div class="part" id="productive">
+                    <div>
+                        <h5 class="part-title left">Có thể bạn sẽ thích</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/SketchBook.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Sketch Book</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Autodesk Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/ibis Paint X.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">ibis Paint X</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">ibis mobile inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Photoshop Sketch.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Photoshop Sketch</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Photoshop Lightroom.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">PS Lightroom</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Illustrator Draw.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Illustrator Draw</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Capture CC.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Capture CC</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="productive">
+                    <div>
+                        <h5 class="part-title left">Có thể bạn sẽ thích</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/SketchBook.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Sketch Book</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Autodesk Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/ibis Paint X.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">ibis Paint X</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">ibis mobile inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Photoshop Sketch.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Photoshop Sketch</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Photoshop Lightroom.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">PS Lightroom</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Illustrator Draw.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Illustrator Draw</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Capture CC.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Capture CC</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="productive">
+                    <div>
+                        <h5 class="part-title left">Có thể bạn sẽ thích</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/SketchBook.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Sketch Book</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Autodesk Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/ibis Paint X.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">ibis Paint X</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">ibis mobile inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Photoshop Sketch.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Photoshop Sketch</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Photoshop Lightroom.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">PS Lightroom</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Illustrator Draw.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Illustrator Draw</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Capture CC.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Capture CC</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="productive">
+                    <div>
+                        <h5 class="part-title left">Có thể bạn sẽ thích</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/SketchBook.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Sketch Book</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Autodesk Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/ibis Paint X.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">ibis Paint X</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">ibis mobile inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Photoshop Sketch.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Photoshop Sketch</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Photoshop Lightroom.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">PS Lightroom</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Illustrator Draw.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Illustrator Draw</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Capture CC.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Capture CC</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="part" id="productive">
+                    <div>
+                        <h5 class="part-title left">Có thể bạn sẽ thích</h5>
+                        <a href="#" class="right btn waves-effect hoverable green darken-3" id="btn-see-more">Xem thêm</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="main-part">
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/SketchBook.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Sketch Book</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Autodesk Inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/ibis Paint X.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">ibis Paint X</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">ibis mobile inc.</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Photoshop Sketch.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Photoshop Sketch</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Photoshop Lightroom.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">PS Lightroom</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Illustrator Draw.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Illustrator Draw</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel app hoverable waves-effect">
+                            <img src="images/Adobe Capture CC.png" alt="learnlanguage">
+                            <div class="detail">
+                                <a class="app-name wrap-with-overflow">Capture CC</a>
+                                <a class="app-detail wrap-with-overflow small-text padding-16px">Adobe</a>
+                                <div class="status">
+                                    <a class="left install-status small-text">NOT INSTALLED</a>
+                                    <a class="right price small-text">FREE</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="pagination">
+                <li class="disabled navigation">
+                    <a href="#" id="previous">
+                        <i class="material-icons">chevron_left</i>
+                    </a>
+                </li>
+                <li class="active pagination-item">
+                    <a href="#">1</a>
+                </li>
+                <li class="waves-effect pagination-item">
+                    <a href="#">2</a>
+                </li>
+                <li class="waves-effect pagination-item">
+                    <a href="#">3</a>
+                </li>
+                <li class="waves-effect pagination-item">
+                    <a href="#">4</a>
+                </li>
+                <li class="waves-effect pagination-item">
+                    <a href="#">5</a>
+                </li>
+                <li class="navigation">
+                    <a href="#" id="next">
+                        <i class="material-icons">chevron_right</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="footer">
+        <div id="footer-1">
+            <div id="footer-1-left">
+                <div id="footer-1-image-left">
+                    <img src="images/service.png" alt="service" width="100" height="100">
+                </div>
+                <div id="footer-1-content-right">
+                    <a>DỊCH VỤ KHÁCH HÀNG</a>
+                    <a href="#!" class="small-text">
+                        <i class="material-icons left">email</i>Thư phản hồi</a>
+                    <a href="#!" class="small-text">360 WIKI</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div id="footer-1-right">
+                <a>SOFTLIF - CỔNG WEB PHẦN MỀM VÀ GAME SỐ MỘT VIỆT NAM</a>
+                <p class="small-text">
+                    360Game là cổng webgame online mới nhất, đa dạng, đa nền tảng số 1 Việt Nam. Tuyển tập các web game mới, web game hot, web
+                    game hay và game online hay nhất 2017. Với nhiều thể loại phong phú như web game chiến thuật, web game
+                    nhập vai, web game giải trí, v.v... các hoạt động event tặng gift code, offline, giải đấu diễn ra thường
+                    xuyên đáp ứng nhanh nhất nhu cầu của Game Thủ. Không chỉ sở hữu kho Web Game phong phú, 360Game còn sở
+                    hữu phần mềm hỗ trợ chơi game mượt số một Việt Nam - 360Game Plus cùng với cộng đồng Game Thủ đông đảo
+                    nhất Việt Nam hiện nay.
+                </p>
+                <table border="0">
+                    <tr>
+                        <td>
+                            <b>Game Online Mới Nhất</b>
+                        </td>
+                        <td>
+                            <b>Game Online Sắp Ra Mắt</b>
+                        </td>
+                        <td>
+                            <b>Sản Phẩm khác</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!">MU Online</a>
+                        </td>
+                        <td>
+                            <a href="#!">Bang Bang</a>
+                        </td>
+                        <td>
+                            <a href="#!">AppStore - Cổng Game Online</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!">MU</a>
+                        </td>
+                        <td>
+                            <a href="#!">Kiếm Khách</a>
+                        </td>
+                        <td>
+                            <a href="#!">H5Game – Game H5</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!">Võ Lâm tduyền Kỳ</a>
+                        </td>
+                        <td>
+                            <a href="#!">Võ Lâm tduyền Kỳ</a>
+                        </td>
+                        <td>
+                            <a href="#!">ZingMe – Mạng Giải tdí Game</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!">Xem thêm</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div id="footer-2">
+            <div id="footer-2-left">
+                <h5>SOFTLIF</h5>
+            </div>
+            <div id="footer-2-right">
+                <a href="#!" class="small-text">Hổ trợ |</a>
+                <a href="#!" class="small-text">Liên hệ |</a>
+                <a href="#!" class="small-text">Thỏa thuận |</a>
+                <a href="#!" class="small-text">Số điện thoại: +84967397916</a>
+                <p class="small-text">Copyright © VNG - Giấy phép MXH số 495/GP-BTTTT cấp ngày 28 /09/2015</p>
+                <p class="small-text">Cơ quan cấp phép: Bộ Thông tin và Truyền thông</p>
+                <p class="small-text">Đơn vị chủ quản: CÔNG TY CỔ PHẦN VNG</p>
+                <p class="small-text">Địa chỉ trụ sở: 52 Nguyễn Ngọc Lộc, Phường 14, Quận 10, Thành phố Hồ Chí Minh</p>
+                <p class="small-text">Người chịu trách nhiệm: Lê Hồng Minh</p>
+                <p class="small-text">Thư điện tử: info@vng.com.vn</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+
+</html>

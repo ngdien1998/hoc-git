@@ -1,0 +1,80 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url("../images/bg-01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    height: 100%;
+    background: linear-gradient(to right, rgba(33, 149, 243, 0.6), rgba(92, 107, 192, 0.6), rgba(104, 58, 183, 0.6));
+}
+
+#login-panel {
+    width: 450px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    border-radius: 15px;
+    padding: 0px 40px 20px 40px;  
+    text-align: center;  
+}
+
+#login-panel #title {
+    text-align: center;
+    font-weight: 700;
+    padding: 30px 0px;
+    font-size: 30px;
+    color: #4a148c;
+    display: block;
+}
+
+#login-btn {
+    font-size: 17px;
+    font-weight: 700;
+    padding: 5px 0px;
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    background: linear-gradient(to right, #64b5f6, #5c6bc0, #ff80ab);
+    box-shadow: none;
+}
+
+#login-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
+}
+
+#password-input {
+    text-align: right;
+}
+
+#password-input, #password {
+    margin-bottom: 0;
+}
+
+#login-list {
+    text-align: center;
+}
+
+.sign-in-with {
+    margin-bottom: 50px;
+}
+
+#login-list li {
+    display: inline;
+}
+
+#login-list li img {
+    cursor: pointer;
+}
+
+#sign-up-btn {
+    padding: 5px;
+    width: 210px;
+    border-radius: 20px;
+}
